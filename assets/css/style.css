@@ -1,0 +1,34 @@
+.GP {
+  display: grid;
+  height: 2em;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 3em 90em 3em;
+  gap: 5px;
+}
+
+Header {
+  background-color: blue;
+  grid-column: 1 / 3;
+}
+
+Main {
+  display: flex;
+}
+
+Aside {
+  background-color: green;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+Section {
+  background-color: red;
+  grid-column: 2 / 4;
+  width: 100%;
+}
+
+Footer {
+  background-color: purple;
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+}
